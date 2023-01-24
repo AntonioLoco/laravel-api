@@ -17,8 +17,8 @@ class ProjectController extends Controller
         }
 
         return response()->json([
-            "success" => count($projects->items()) > 0 ? true : false,
-            "response" => count($projects->items()) > 0 ? $projects : "Nessun progetto trovato"
+            "success" => true,
+            "response" => $projects
         ]);
     }
 
